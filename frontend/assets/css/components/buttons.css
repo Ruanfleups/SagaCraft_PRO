@@ -1,0 +1,37 @@
+.btn {
+    display: inline-block;
+    padding: var(--gap-sm) var(--gap-md);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    
+}
+
+.btn-footer {
+    background: var(--verde);
+    color: white;
+    margin-bottom: var(--gap-md);
+}
+
+.btn-footer:hover {
+    background: #3e8e41;
+    transform: translateY(-2px);
+}
+
+.btn-download:hover {
+    background: #3e8e41;
+    transform: translateY(-2px);
+}
+
+.btn-download {
+    text-align: center;
+    background: var(--verde);
+    color: white;
+    margin-bottom: var(--gap-md);
+}
+
+a:focus,
+.btn:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SagaCraft</title>
+    <link rel="icon" type="image/png" href="../assets/css/images/logo-1.png">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        iframe {
+            width: 100%;
+            border: none;
+            display: block;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../assets/css/images/logo-1.png" width="90">
+            <h1 class="logo" aria-label="Logo SagaCraft">SagaCraft</h1>
+            <nav aria-label="Menu principal">
+                <button id="menu-toggle" aria-label="Abrir menu" class="menu-toggle">
+                    <span class="hamburger"> ☰</span>
+                </button>
+                <ul id="menu" class="nav-links">
+                    <li><a href="inicio.html" target="pag" class="nav-link">Início</a></li>
+                    <li><a href="loja.html" target="pag" class="nav-link">Loja</a></li>
+                    <li><a href="download.html" target="pag" class="nav-link">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <iframe id="pag" name="pag" src="inicio.html" onload="ajustarAltura()"></iframe>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="btn btn-footer">⬅ Voltar para Início</a>
+                <p>&copy; 2025 SagaCraft. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+
+        // Fecha o menu ao clicar em um link (mobile)
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('show');
+            });
+        });
+    </script>
+
+    <script src="../assets/css/js/main.js"></script>
+    <script src="../assets/css/js/navbar.js"></script>
+
+</body>
+
+</html>

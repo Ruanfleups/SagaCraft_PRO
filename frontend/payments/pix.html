@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pagamento - SagaCraft</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <section class="container pagamento">
+    <h2 id="produto-nome">Carregando produto...</h2>
+    <p id="produto-valor">Valor: --</p>
+
+    <p>Finalize o pagamento pelo método abaixo:</p>
+    <ul>
+      <li>PIX: <code>sagacraft@pix.com</code></li>
+      <li>Chave CPF: <code>123.456.789-00</code></li>
+      <li>Após o pagamento, envie o comprovante para nosso Discord.</li>
+    </ul>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nome = params.get('produto');
+    const valor = params.get('valor');
+
+    document.getElementById("produto-nome").textContent = `Produto: ${nome}`;
+    document.getElementById("produto-valor").textContent = `Valor: R$ ${valor}`;
+  </script>
+
+</body>
+</html>

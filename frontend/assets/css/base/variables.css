@@ -1,0 +1,15 @@
+:root {
+    --verde: #4CAF50;
+    --roxo: #8A2BE2;
+    --fundo-escuro: #1a1a1a;
+    --texto: #ffffff;
+    --black: #000000;
+    
+    /* Espaçamentos */
+    --gap-sm: 0.5rem;
+    --gap-md: 1rem;
+    --gap-lg: 2rem;
+    
+    /* Bordas */
+    --border-radius: 8px;
+}

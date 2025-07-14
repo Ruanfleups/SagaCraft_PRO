@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja - SagaCraft</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+</head>
+
+<body>
+
+  <main data-aos="fade-up" class="container">
+    <section class="hero">
+        <h1 class="bvd"><i class="fas fa-store-alt"></i> LOJA SAGACRAFT</h1>
+        <p>Aqui os SONHOS viram REALIDADE!</p>
+        <div id="status-servidor">
+          <i class="fas fa-users"></i> Jogadores online: <span id="online">carregando...</span>
+        </div>
+    </section>
+
+    <section class="search-section">
+      <div class="busca-nav">
+        <i class="fas fa-search"></i>
+        <input type="text" id="campo-busca" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+        <button id="filtro-btn"><i class="fas fa-filter"></i> Filtrar</button>
+      </div>
+
+      <div id="filtros" class="filtros-container">
+        <button class="filtro-ativo" data-categoria="todos">Todos</button>
+        <button data-categoria="vip">VIPs</button>
+        <button data-categoria="ranks">Ranks</button>
+        <button data-categoria="skins">Skins</button>
+        <button data-categoria="poderes">Poderes</button>
+      </div>
+    </section>
+
+    <section id="vip" class="produtos">
+      <h3 class="bvd"><i class="fas fa-crown"></i> Status VIP</h3>
+      <div class="grid">
+        <!-- VIP Bronze -->
+        <div class="card">
+          <div class="badge">VIP</div>
+          <h4 class="bvd">VIP Bronze</h4>
+          <ul class="beneficios">
+            <li><i class="fas fa-check"></i> Acesso inicial às funções básicas.</li>
+            <li><i class="fas fa-check"></i> Tag exclusiva no chat.</li>
+          </ul>
+          <div class="preco-container">
+            <span class="preco">R$9,99</span>
+            <a href="pagamento.html?produto=VIP%20Bronze&valor=9.99" class="btn-comprar">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="badge">VIP</div>
+          <h4 class="bvd">VIP Prata</h4>
+          <ul class="beneficios">
+            <li><i class="fas fa-check"></i> Acesso parcial às funções básicas.</li>
+            <li><i class="fas fa-check"></i> Tag exclusiva no chat.</li>
+          </ul>
+          <div class="preco-container">
+            <span class="preco">R$19,99</span>
+            <a href="pagamento.html?produto=VIP%20Prata&valor=19.99" class="btn-comprar">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="badge">VIP</div>
+          <h4 class="bvd">VIP Ouro</h4>
+          <ul class="beneficios">
+            <li><i class="fas fa-check"></i> Acesso a comandos especiais e bônus diários.</li>
+            <li><i class="fas fa-check"></i> Tag exclusiva no chat.</li>
+          </ul>
+          <div class="preco-container">
+            <span class="preco">R$9,99</span>
+            <a href="pagamento.html?produto=VIP%20Ouro&valor=39.99" class="btn-comprar">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="badge">VIP</div>
+          <h4 class="bvd">VIP Platina</h4>
+          <ul class="beneficios">
+            <li><i class="fas fa-check"></i> Acesso a comandos especiais e bônus diários.</li>
+            <li><i class="fas fa-check"></i> Tag exclusiva no chat.</li>
+            <li><i class="fas fa-check"></i> Acesso a comandos especiais, XP dobrado. </li>
+          </ul>
+          <div class="preco-container">
+            <span class="preco">R$59,99</span>
+            <a href="pagamento.html?produto=VIP%20Platina&valor=59.99" class="btn-comprar">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="badge">VIP</div>
+          <h4 class="bvd">VIP Esmeralda</h4>
+          <ul class="beneficios">
+            <li><i class="fas fa-check"></i>Acesso a comandos especiais, XP & COINS dobrados + acesso área VIP.</li>
+            <li><i class="fas fa-check"></i> Tag exclusiva no chat.</li>
+            <li><i class="fas fa-check"></i> Acesso a comandos especiais, XP dobrado. </li>
+          </ul>
+          <div class="preco-container">
+            <span class="preco">R$59,99</span>
+            <a href="pagamento.html?produto=VIP%20Platina&valor=59.99" class="btn-comprar">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+
+        <!-- VIP Diamante (exemplo de destaque) -->
+        <div class="card">
+          <div class="badge">VIP</div>
+          <h4 class="bvd">VIP Diamante</h4>
+          <ul class="beneficios">
+            <li><i class="fas fa-check"></i> Acesso total ao servidor</li>
+            <li><i class="fas fa-check"></i> Vantagens exclusivas</li>
+            <li><i class="fas fa-check"></i> Área VIP especial</li>
+            <li><i class="fas fa-check"></i> Suporte prioritário</li>
+          </ul>
+          <div class="preco-container">
+            <span class="preco-antigo">De: R$129,99</span>
+            <span class="preco">Por: R$99,99</span>
+            <a href="pagamento.html?produto=VIP%20Diamante&valor=99.99" class="btn">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+
+        <!-- Demais VIPs... -->
+      </div>
+    </section>
+
+    <!-- Seções de Ranks, Skins e Poderes com mesma estrutura -->
+    <section id="vip" class="produtos">
+      <h3 class="bvd"><i class="fas fa-crown"></i>Itens</h3>
+      <div class="grid">
+
+
+<div class="card">
+  <div class="badge">Item</div>
+  <h4 class="bvd">Nether</h4>
+  <ul class="beneficios">
+    <li><i class="fas fa-check"></i> Espada de Ferro encantada com Nether II</li>
+    <li><i class="fas fa-check"></i> Skin temática + kit mensal.</li>
+  </ul>
+  <div class="preco-container">
+    <span class="preco">R$59,90</span>
+    <a href="pagamento.html?produto=VIP%20Nether&valor=59.90" class="btn-comprar">
+      <i class="fas fa-shopping-cart"></i> Comprar
+    </a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="badge">Item</div>
+  <h4 class="bvd">VIP Ferro</h4>
+  <ul class="beneficios">
+    <li><i class="fas fa-check"></i> Kit ferro semanal.</li>
+    <li><i class="fas fa-check"></i> Tag exclusiva no chat.</li>
+  </ul>
+  <div class="preco-container">
+    <span class="preco">R$19,90</span>
+    <a href="pagamento.html?produto=VIP%20Ferro&valor=19.90" class="btn-comprar">
+      <i class="fas fa-shopping-cart"></i> Comprar
+    </a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="badge">Item</div>
+  <h4 class="bvd">Super Salto</h4>
+  <ul class="beneficios">
+    <li><i class="fas fa-check"></i> Pulo aumentado por tempo ilimitado.</li>
+    <li><i class="fas fa-check"></i> Ideal para parkours e eventos.</li>
+  </ul>
+  <div class="preco-container">
+    <span class="preco">R$14,90</span>
+    <a href="pagamento.html?produto=Super%20Salto&valor=14.90" class="btn-comprar">
+      <i class="fas fa-shopping-cart"></i> Comprar
+    </a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="badge">Item</div>
+  <h4 class="bvd">Montaria de Dragão</h4>
+  <ul class="beneficios">
+    <li><i class="fas fa-check"></i> Dragão como montaria pessoal.</li>
+    <li><i class="fas fa-check"></i> Desbloqueia em todas as áreas.</li>
+  </ul>
+  <div class="preco-container">
+    <span class="preco">R$49,90</span>
+    <a href="pagamento.html?produto=Montaria%20de%20Drag%C3%A3o&valor=49.90" class="btn-comprar">
+      <i class="fas fa-shopping-cart"></i> Comprar
+    </a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="badge">Item</div>
+  <h4 class="bvd">Kit Redstone Pro</h4>
+  <ul class="beneficios">
+    <li><i class="fas fa-check"></i> Blocos, repetidores, pistões e mais.</li>
+    <li><i class="fas fa-check"></i> Ideal para engenheiros e builders.</li>
+  </ul>
+  <div class="preco-container">
+    <span class="preco">R$34,90</span>
+    <a href="pagamento.html?produto=Kit%20Redstone%20Pro&valor=34.90" class="btn-comprar">
+      <i class="fas fa-shopping-cart"></i> Comprar
+    </a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="badge">Item</div>
+  <h4 class="bvd">Skin Angelical</h4>
+  <ul class="beneficios">
+    <li><i class="fas fa-check"></i> Visual exclusivo com asas brancas.</li>
+    <li><i class="fas fa-check"></i> Válida para uso em qualquer lobby.</li>
+  </ul>
+  <div class="preco-container">
+    <span class="preco">R$19,90</span>
+    <a href="pagamento.html?produto=Skin%20Angelical&valor=19.90" class="btn-comprar">
+      <i class="fas fa-shopping-cart"></i> Comprar
+    </a>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="cta-section">
+      <div class="cta-box">
+        <h3>Não encontrou o que procura?</h3>
+        <p>Entre em contato conosco para solicitações especiais!</p>
+        <a href="#" class="btn-cta"><i class="fas fa-headset"></i> Suporte</a>
+      </div>
+    </section>
+  </main>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  <script>
+    // Busca e filtros avançados
+    document.addEventListener('DOMContentLoaded', function () {
+      const campoBusca = document.getElementById("campo-busca");
+      const filtroBtns = document.querySelectorAll('[data-categoria]');
+
+      // Busca integrada com filtros
+      function filtrarProdutos() {
+        const termo = campoBusca.value.toLowerCase();
+        const categoriaAtiva = document.querySelector('.filtro-ativo').dataset.categoria;
+
+        document.querySelectorAll('.card').forEach(card => {
+          const texto = card.innerText.toLowerCase();
+          const cardCategoria = card.closest('.produtos').id;
+
+          const termoMatch = termo === '' || texto.includes(termo);
+          const categoriaMatch = categoriaAtiva === 'todos' || cardCategoria === categoriaAtiva;
+
+          card.style.display = termoMatch && categoriaMatch ? '' : 'none';
+        });
+      }
+
+      campoBusca.addEventListener('input', filtrarProdutos);
+
+      filtroBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          document.querySelector('.filtro-ativo').classList.remove('filtro-ativo');
+          this.classList.add('filtro-ativo');
+          filtrarProdutos();
+        });
+      });
+
+      // Status do servidor com cache
+      let lastUpdate = 0;
+      async function atualizarStatus() {
+        const now = Date.now();
+        if (now - lastUpdate < 30000) return;
+
+        lastUpdate = now;
+        try {
+          const response = await fetch("https://api.mcsrvstat.us/2/play.seuservidor.com");
+          const data = await response.json();
+
+          const onlineSpan = document.getElementById("online");
+          onlineSpan.textContent = data.online ?
+            `${data.players.online}/${data.players.max}` : "Servidor offline";
+          onlineSpan.style.color = data.online ? "#4CAF50" : "#f44336";
+
+        } catch (error) {
+          console.error("Erro ao buscar status:", error);
+          document.getElementById("online").textContent = "Erro ao conectar";
+        }
+      }
+
+      atualizarStatus();
+      setInterval(atualizarStatus, 30000);
+
+      // Tooltips para benefícios
+      tippy('[data-tippy-content]', {
+        placement: 'bottom',
+        animation: 'fade'
+      });
+    });
+  </script>
+  <script src="../assets/css/js/main.js"></script>
+</body>
+
+</html>

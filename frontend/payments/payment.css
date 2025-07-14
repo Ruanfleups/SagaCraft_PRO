@@ -1,0 +1,50 @@
+.payment-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+#qrcode {
+  width: 200px;
+  height: 200px;
+  margin: 1rem auto;
+  background: white;
+  padding: 10px;
+}
+
+.pagamento {
+  background-color: #151515;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.pagamento h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.pagamento p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.pagamento ul {
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagamento li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.pagamento code {
+  background-color: #222;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}

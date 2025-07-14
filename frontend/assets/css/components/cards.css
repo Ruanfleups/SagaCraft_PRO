@@ -1,0 +1,35 @@
+.card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: var(--gap-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border: 2px solid var(--roxo-destaque);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+  box-shadow: 0 0px 25px rgba(139, 0, 255, 0.3); 
+}
+
+.card h4 {
+  color: var(--roxo-destaque);
+  margin-bottom: var(--gap-sm);
+  font-size: 18px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card span {
+  display: block;
+  font-size: 20px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+

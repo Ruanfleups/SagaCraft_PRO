@@ -1,0 +1,107 @@
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: var(--roxo);
+    border-radius: 10px;
+}
+
+.nav-link {
+    color: var(--texto);
+    transition: color 0.3s ease;
+    padding: var(--gap-sm) 0;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--verde);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--verde);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Menu hamburguer escondido por padrão */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--texto);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none; /* escondido por padrão */
+    padding: 15px 20px;
+    z-index: 999;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .nav-links.show {
+    display: flex; /* mostra quando ativado */
+  }
+
+  .menu-toggle {
+    display: block; /* mostra o botão só no mobile */
+  }
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 28px;
+  margin: 0 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* para responsividade */
+  gap: 20px; /* espaçamento entre itens */
+}
+
+.header img {
+  vertical-align: middle;
+}
+
+.header .logo {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--texto);
+}
+

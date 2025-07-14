@@ -1,0 +1,24 @@
+/* ======= BASE ======= */
+@import url('base/reset.css');
+@import url('base/typography.css');
+@import url('base/variables.css');
+
+/* ======= COMPONENTES ======= */
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/navbar.css');
+@import url('components/navbar-protected.css');
+
+/* ======= LAYOUTS ======= */
+@import url('layouts/footer.css');
+@import url('layouts/grid.css');
+@import url('layouts/headers.css');
+@import url('layouts/responsive.css');
+@import url('layouts/containers.css');
+
+/* ======= PAGES ======= */
+@import url('pages/loja.css');
+
+/* ======= ANIMAÇÕES ======= */
+
+@import url('components/animations.css');

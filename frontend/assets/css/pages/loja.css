@@ -1,0 +1,71 @@
+/* ===== ESTILOS ESPECÍFICOS DA LOJA ===== */
+
+
+/* Cards destacados */
+
+
+/* Badges */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--verde);
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/* Seção de busca */
+.search-section {
+  margin: 2rem 0;
+}
+
+.busca-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem;
+  border-radius: var(--border-radius);
+}
+
+#campo-busca {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+/* Filtros */
+.filtros-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.filtros-container button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filtros-container button:hover {
+  background: var(--roxo-destaque);
+}
+
+.filtro-ativo {
+  background: var(--verde) !important;
+}
+
+/* ... outros estilos específicos ... */

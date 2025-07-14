@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+    <main data-aos="fade-up" class="container">
+        <section class="hero">
+            <div class="container">
+                <h1 class="bvd">DOWNLOAD</h1>
+                <div id="status-servidor">
+                    <i class="fas fa-users"></i> Jogadores online: <span id="online">carregando...</span>
+                </div>
+            </div>
+        </section>
+
+            <section class="welcome-message">
+            <h2 class="bvd">Jogue agora mesmo!</h2>
+            <p>Faça o download do Tlauncher para jogar o SagaCraft Gratuitamente!</p>
+            <ul class="features-list">
+                <li>✅ Jogue de Graça </li>
+                <li>✅ Jogue com seus amigos </li>
+                <li>✅ Jogue online </li>
+                <li>✅ Jogue AGORA </li>
+            </ul>
+            </section>
+
+        <div class="grid">
+            <a href="https://tlauncher.org/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-download">DOWNLOAD</a>
+        </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+        <script>
+            // Status do servidor com cache
+            let lastUpdate = 0;
+            async function atualizarStatus() {
+                const now = Date.now();
+                if (now - lastUpdate < 30000) return;
+
+                lastUpdate = now;
+                try {
+                    const response = await fetch("https://api.mcsrvstat.us/2/play.seuservidor.com");
+                    const data = await response.json();
+
+                    const onlineSpan = document.getElementById("online");
+                    onlineSpan.textContent = data.online ?
+                        `${data.players.online}/${data.players.max}` : "Servidor offline";
+                    onlineSpan.style.color = data.online ? "#4CAF50" : "#f44336";
+
+                } catch (error) {
+                    console.error("Erro ao buscar status:", error);
+                    document.getElementById("online").textContent = "Erro ao conectar";
+                }
+            }
+
+            atualizarStatus();
+            setInterval(atualizarStatus, 30000);
+
+            // Tooltips para benefícios
+            tippy('[data-tippy-content]', {
+                placement: 'bottom',
+                animation: 'fade'
+            });
+
+        </script>
+        <script src="../assets/css/js/main.js"></script>
+</body>
+
+</html>

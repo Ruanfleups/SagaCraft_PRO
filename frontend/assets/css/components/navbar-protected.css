@@ -1,0 +1,18 @@
+/* frontend/assets/css/components/_navbar-protected.css */
+.navbar--protected {
+  background: rgba(30, 30, 30, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.navbar__user {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+}
+
+.navbar__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--verde-principal);
+}

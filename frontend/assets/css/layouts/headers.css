@@ -1,0 +1,15 @@
+.header {
+    background-color: rgba(0, 0, 0, 0);
+    padding: var(--gap-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    color: var(--verde);
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 600;
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="iframe-height" content="auto">
+    <title>Bem-vindo - SagaCraft</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        /* Estilos específicos da página */
+
+        .recent-donations {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .donations-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .donations-table th,
+        .donations-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .donations-table th {
+            color: var(--verde);
+            font-weight: 600;
+        }
+
+        .donations-table tr:hover {
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+
+        .player-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background-color: var(--roxo);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main data-aos="fade" class="container">
+        <section class="hero">
+            <div class="container">
+                <h1 class="bvd">Bem-vindo ao SagaCraft!</h1>
+                <p class="subtitle">O servidor mais épico de Minecraft</p>
+                <div class="server-stats">
+                    <div id="status-servidor">
+                        <i class="fas fa-users"></i> Jogadores online: <span id="online">carregando...</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1,432</span>
+                        <span class="stat-label">Jogadores Hoje</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo Principal -->
+        <!-- Seção de Boas-vindas -->
+        <section class="welcome-message">
+            <h2 class="bvd">Comece sua jornada</h2>
+            <p>O SagaCraft oferece uma experiência única de Minecraft com:</p>
+            <ul class="features-list">
+                <li>✅ Mods exclusivos</li>
+                <li>✅ Eventos semanais</li>
+                <li>✅ Sistema de ranks</li>
+                <li>✅ Economia balanceada</li>
+            </ul>
+
+            <div class="btn">
+                <a href="download.html" class="btn btn-download">Download do Launcher</a>
+                <a href="loja.html" class="btn btn-download">Ver Loja VIP</a>
+            </div>
+        </section>
+
+        <!-- Tabela de Doações Recentes -->
+        <section class="recent-donations">
+            <h2 class="bvd"><i class="fas fa-medal"></i> Apoiadores Recentes</h2>
+            <p>Jogadores que contribuíram para o servidor:</p>
+
+            <table class="donations-table">
+                <thead>
+                    <tr>
+                        <th>Jogador</th>
+                        <th>Item</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Notch <span class="player-badge">Diamante</span></td>
+                        <td>VIP Diamante</td>
+                        <td>R$ 99,90</td>
+                        <td>10/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Herobrine</td>
+                        <td>Super Salto</td>
+                        <td>R$ 14,90</td>
+                        <td>09/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Steve <span class="player-badge">Ouro</span></td>
+                        <td>VIP Ouro</td>
+                        <td>R$ 39,90</td>
+                        <td>09/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Alex</td>
+                        <td>Skin Exclusiva</td>
+                        <td>R$ 19,90</td>
+                        <td>08/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Notch <span class="player-badge">Diamante</span></td>
+                        <td>VIP Diamante</td>
+                        <td>R$ 99,90</td>
+                        <td>10/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Herobrine</td>
+                        <td>Super Salto</td>
+                        <td>R$ 14,90</td>
+                        <td>09/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Steve <span class="player-badge">Ouro</span></td>
+                        <td>VIP Ouro</td>
+                        <td>R$ 39,90</td>
+                        <td>09/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Alex</td>
+                        <td>Skin Exclusiva</td>
+                        <td>R$ 19,90</td>
+                        <td>08/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Ruanzeira <span class="player-badge">Diamante</span></td>
+                        <td>VIP Diamante</td>
+                        <td>R$ 99,90</td>
+                        <td>10/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Zerado</td>
+                        <td>Skin Camuflada</td>
+                        <td>R$ 9,90</td>
+                        <td>07/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>BuildMaster</td>
+                        <td>Super Construção</td>
+                        <td>R$ 24,90</td>
+                        <td>06/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>N1njaPvP <span class="player-badge">Ouro</span></td>
+                        <td>VIP Ouro</td>
+                        <td>R$ 39,90</td>
+                        <td>05/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>LendárioX</td>
+                        <td>Espada Flamejante</td>
+                        <td>R$ 29,90</td>
+                        <td>05/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Pixelado</td>
+                        <td>Capa Personalizada</td>
+                        <td>R$ 19,90</td>
+                        <td>04/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>DragonBorn</td>
+                        <td>Montaria de Dragão</td>
+                        <td>R$ 49,90</td>
+                        <td>04/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>CraftGirl</td>
+                        <td>Skin Angelical</td>
+                        <td>R$ 19,90</td>
+                        <td>03/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Speedy <span class="player-badge">Diamante</span></td>
+                        <td>VIP Diamante</td>
+                        <td>R$ 99,90</td>
+                        <td>03/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Redstoner</td>
+                        <td>Kit Redstone Pro</td>
+                        <td>R$ 34,90</td>
+                        <td>02/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>EndermanOP</td>
+                        <td>TP Ilimitado</td>
+                        <td>R$ 14,90</td>
+                        <td>02/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>CreeperFeliz</td>
+                        <td>Emoji Exclusivo</td>
+                        <td>R$ 4,90</td>
+                        <td>01/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>NoobMaster69</td>
+                        <td>Pacote Inicial</td>
+                        <td>R$ 9,90</td>
+                        <td>30/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>RainhaCraft <span class="player-badge">Ouro</span></td>
+                        <td>VIP Ouro</td>
+                        <td>R$ 39,90</td>
+                        <td>30/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>BlocoRápido</td>
+                        <td>Velocidade X5</td>
+                        <td>R$ 12,90</td>
+                        <td>29/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>MineChef</td>
+                        <td>Kit Cozinheiro</td>
+                        <td>R$ 11,90</td>
+                        <td>29/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>DarkSoul</td>
+                        <td>Skin Sombria</td>
+                        <td>R$ 19,90</td>
+                        <td>28/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>LightArrow</td>
+                        <td>Arco de Luz</td>
+                        <td>R$ 24,90</td>
+                        <td>28/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>ZumbiX</td>
+                        <td>Kit Zumbi</td>
+                        <td>R$ 14,90</td>
+                        <td>27/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>CraftandoTudo</td>
+                        <td>Pack de Recursos</td>
+                        <td>R$ 9,90</td>
+                        <td>26/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>NetherLord</td>
+                        <td>VIP Nether</td>
+                        <td>R$ 59,90</td>
+                        <td>25/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>LoboAlpha</td>
+                        <td>Montaria de Lobo</td>
+                        <td>R$ 29,90</td>
+                        <td>24/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>MineQueen</td>
+                        <td>Skin Real</td>
+                        <td>R$ 19,90</td>
+                        <td>23/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>SniperMC</td>
+                        <td>Arma de Longo Alcance</td>
+                        <td>R$ 19,90</td>
+                        <td>23/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>SkyBlockPro <span class="player-badge">Diamante</span></td>
+                        <td>VIP Diamante</td>
+                        <td>R$ 99,90</td>
+                        <td>22/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>IronCrafter</td>
+                        <td>VIP Ferro</td>
+                        <td>R$ 19,90</td>
+                        <td>21/04/2025</td>
+                    </tr>
+                    <tr>
+                        <td>GhostPlayer</td>
+                        <td>Invisibilidade</td>
+                        <td>R$ 14,90</td>
+                        <td>20/04/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="table-footer">
+                <a href="loja.html" class="btn btn--small">Ver todos os itens</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    <script>
+        // Busca e filtros avançados
+        document.addEventListener('DOMContentLoaded', function () {
+            const campoBusca = document.getElementById("campo-busca");
+            const filtroBtns = document.querySelectorAll('[data-categoria]');
+
+            // Busca integrada com filtros
+            function filtrarProdutos() {
+                const termo = campoBusca.value.toLowerCase();
+                const categoriaAtiva = document.querySelector('.filtro-ativo').dataset.categoria;
+
+                document.querySelectorAll('.card').forEach(card => {
+                    const texto = card.innerText.toLowerCase();
+                    const cardCategoria = card.closest('.produtos').id;
+
+                    const termoMatch = termo === '' || texto.includes(termo);
+                    const categoriaMatch = categoriaAtiva === 'todos' || cardCategoria === categoriaAtiva;
+
+                    card.style.display = termoMatch && categoriaMatch ? '' : 'none';
+                });
+            }
+
+            campoBusca.addEventListener('input', filtrarProdutos);
+
+            filtroBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    document.querySelector('.filtro-ativo').classList.remove('filtro-ativo');
+                    this.classList.add('filtro-ativo');
+                    filtrarProdutos();
+                });
+            });
+
+            // Status do servidor com cache
+            let lastUpdate = 0;
+            async function atualizarStatus() {
+                const now = Date.now();
+                if (now - lastUpdate < 30000) return;
+
+                lastUpdate = now;
+                try {
+                    const response = await fetch("https://api.mcsrvstat.us/2/play.seuservidor.com");
+                    const data = await response.json();
+
+                    const onlineSpan = document.getElementById("online");
+                    onlineSpan.textContent = data.online ?
+                        `${data.players.online}/${data.players.max}` : "Servidor offline";
+                    onlineSpan.style.color = data.online ? "#4CAF50" : "#f44336";
+
+                } catch (error) {
+                    console.error("Erro ao buscar status:", error);
+                    document.getElementById("online").textContent = "Erro ao conectar";
+                }
+            }
+
+            atualizarStatus();
+            setInterval(atualizarStatus, 30000);
+
+            // Tooltips para benefícios
+            tippy('[data-tippy-content]', {
+                placement: 'bottom',
+                animation: 'fade'
+            });
+        });
+    </script>
+    <script src="../assets/css/js/main.js"></script>
+</body>
+
+</html>
